@@ -77,6 +77,6 @@ class ConfirmSettingsRefresh
     {
         return Metadata::query()->exists()
             && $this->app->environment('production')
-            && ! $this->input->getOption('force');
+            && !$this->input->getOption('force');
     }
 }

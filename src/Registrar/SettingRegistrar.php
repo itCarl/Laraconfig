@@ -64,7 +64,7 @@ class SettingRegistrar
         if ($this->filesystem->exists($this->app->basePath('settings'))) {
             $files = $this->filesystem->allFiles($this->manifestsPath);
 
-            $this->manifestsLoaded = ! empty($files);
+            $this->manifestsLoaded = !empty($files);
 
             foreach ($files as $file) {
                 require $file->getPathname();

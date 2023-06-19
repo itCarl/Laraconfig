@@ -64,7 +64,7 @@ class InvalidateCache
     protected function shouldInvalidateCacheKeys(Data $data): bool
     {
         return $data->invalidateCache
-            && ! $this->input->getOption('flush-cache')
+            && !$this->input->getOption('flush-cache')
             && $this->config->get('laraconfig.cache.enable');
     }
 

@@ -96,19 +96,19 @@ class FindModelsWithSettings
             }
 
             // Should be part of the Eloquent ORM Model class.
-            if (! $reflection->isSubclassOf(Model::class)) {
+            if (!$reflection->isSubclassOf(Model::class)) {
                 continue;
             }
 
             // We will exclude all models that are not instantiable, like abstracts,
             // as the developer may be using an abstract "User" class, extended by
             // other classes like "Admin", "Moderator", etc, avoiding duplicates.
-            if (! $reflection->isInstantiable()) {
+            if (!$reflection->isInstantiable()) {
                 continue;
             }
 
             // Should have the HasConfig trait, or have a trait that uses it.
-            if (! in_array(HasConfig::class, trait_uses_recursive($className), true)) {
+            if (!in_array(HasConfig::class, trait_uses_recursive($className), true)) {
                 continue;
             }
 

@@ -71,7 +71,7 @@ class FlushCache
     protected function shouldPrompt(): bool
     {
         return $this->app->environment('production')
-            && ! $this->input->getOption('force');
+            && !$this->input->getOption('force');
     }
 
     /**

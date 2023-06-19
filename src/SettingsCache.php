@@ -120,7 +120,7 @@ class SettingsCache implements Serializable
      */
     public function invalidateIfNotInvalidated(): void
     {
-        if (! $this->invalidatedAt) {
+        if (!$this->invalidatedAt) {
             $this->invalidate();
         }
     }
@@ -135,7 +135,7 @@ class SettingsCache implements Serializable
         // Just a simple trick to regenerate only if it's enabled.
         $this->settings->regeneratesOnExit = $this->automaticRegeneration;
     }
-    
+
     /**
      * representation of object.
      *
