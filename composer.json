@@ -16,7 +16,7 @@
     "illuminate/support": "^9.2",
     "illuminate/collections": "^9.2",
     "illuminate/config": "^9.2",
-    "illuminate/cache": "^9",
+    "illuminate/cache": "^8.43",
     "symfony/console": "^6.0"
   },
   "require-dev": {
