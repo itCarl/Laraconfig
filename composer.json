@@ -12,12 +12,12 @@
   ],
   "require": {
     "php": ">=8.0",
-    "illuminate/database": "^11",
-    "illuminate/support": "^11",
-    "illuminate/collections": "^11",
-    "illuminate/config": "^11",
-    "illuminate/cache": "^11",
-    "symfony/console": "^7.0"
+    "illuminate/database": "^11|^12|^13",
+    "illuminate/support": "^11|^12|^13",
+    "illuminate/collections": "^11|^12|^13",
+    "illuminate/config": "^11|^12|^13",
+    "illuminate/cache": "^11|^12|^13",
+    "symfony/console": "^7.0|^8.0"
   },
   "require-dev": {
     "mockery/mockery": "^1.4.3",
